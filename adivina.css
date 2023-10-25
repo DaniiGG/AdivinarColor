@@ -1,17 +1,75 @@
-body{
+
+div{
     text-align: center;
 }
-#muestra {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    border: 2px solid black;
+h1, p{
+    color: white;
+    
 }
 
+#muestra {
+  padding: 10px;
+  background-color: rgb(41, 169, 126);
+
+}
+
+#dificultad{
+    margin-top: -14px;
+    background-color: white;
+}
+#dificultad li{
+    text-decoration:none;
+    
+    font-size:14px;
+    } 
+    #dificultad ul li{
+    display:inline-block;
+    width:5%;
+    padding:5px 10px;
+    background-color:rgb(41, 169, 126);
+    color:black;
+    text-align:center;
+    margin-right: 50px ;
+    
+    }
+    #dificultad ul li:hover{
+    background-color:#000000;
+    color:white;
+    }
+    #dificultad ul li:last-child{
+       background-color: white;
+       margin-left: 10%;
+    color: white;
+    }
+    #dificultad ul li:last-child:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+     
+     }
+
+    
+     #dificultad ul li:first-child{
+        
+        margin-left: 20%;
+     
+     }
+#opciones {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+   justify-content: center;
+    
+    
+}
 .opcion {
     display: inline-block;
     width: 80px;
     height: 80px;
     margin: 10px;
     cursor: pointer;
+    border-radius: 10px;
+    
+}
+body{
+    background-color: rgb(40, 38, 38);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
