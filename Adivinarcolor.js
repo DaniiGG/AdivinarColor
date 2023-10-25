@@ -80,13 +80,13 @@ function dificil() {
     modoDificilActivo = true;
 function verificarAdivinanza(color, opcion) {
     if (color === colorCorrecto) {
-       
+        muestra.style.backgroundColor = colorCorrecto;
+        modoDificil.style.backgroundColor = colorCorrecto;
+        modoFacil.style.backgroundColor = colorCorrecto;
+        jugar.style.backgroundColor = colorCorrecto;
         opciones.forEach((opcion) => {
             opcion.style.backgroundColor = colorCorrecto;
-            muestra.style.backgroundColor = colorCorrecto;
-            modoDificil.style.backgroundColor = colorCorrecto;
-            modoFacil.style.backgroundColor = colorCorrecto;
-            jugar.style.backgroundColor = colorCorrecto;
+            
         });
         setTimeout(() => {
             window.location.reload();
@@ -103,8 +103,8 @@ function verificarAdivinanza(color, opcion) {
 
 modoFacil.addEventListener('click', () => {
     invisible.style.color = "transparent";
-    jugar.style.backgroundColor = "lightblue";
-    jugar.style.color = "black";
+    
+    
     jugar.addEventListener('click', () => {
     
         facil();
@@ -114,9 +114,9 @@ modoFacil.addEventListener('click', () => {
 
 
 modoDificil.addEventListener('click', () => {
-    jugar.style.backgroundColor = "lightblue";
+    
     invisible.style.color = "transparent";
-    jugar.style.color = "black";
+    
     jugar.addEventListener('click', () => {
     
         dificil(); 
